@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - StyleCuts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">StyleCuts</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Book Appointment Section with background -->
+    <div class="booking-page-wrapper">
+        <section class="book-appointment">
+            <h2>Book Your Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="coloring">Hair Coloring</option>
+                        <option value="styling">Styling</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit" class="cta-button">Book Appointment</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup">
+        <p>Your appointment has been booked successfully!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <!-- Footer Section -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>StyleCuts</h3>
+            <p>Where style meets confidence. Professional hair care services for everyone.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html">Book Appointment</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <ul class="hours-list">
+                <li><span>Monday - Friday:</span> 9:00 AM - 8:00 PM</li>
+                <li><span>Saturday:</span> 9:00 AM - 6:00 PM</li>
+                <li><span>Sunday:</span> 10:00 AM - 4:00 PM</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Style Street, Beauty City, BC 12345</li>
+                <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                <li><i class="fas fa-envelope"></i> info@stylecuts.com</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 StyleCuts. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html> 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - StyleCuts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">StyleCuts</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group button-container">
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Style Street<br>Beauty City, BC 12345</p>
+                </div>
+                <div class="info-item">
+                    <h3>Operating Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday:</span> 9:00 AM - 8:00 PM</li>
+                        <li><span>Saturday:</span> 9:00 AM - 6:00 PM</li>
+                        <li><span>Sunday:</span> 10:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <h3>Contact</h3>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: info@stylecuts.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1125.5375680954155!2d-80.53556989778235!3d43.476351847213294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf5b6f948a38d%3A0xdb3b66d443605974!2sNice%20Haircut%20Barbershop%20%26%20Salon!5e0!3m2!1sen!2sca!4v1733847543285!5m2!1sen!2sca" width="100%" 
+            height="450" style="border:0;"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup">
+        <p>Your message has been sent successfully!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <!-- Footer Section -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>StyleCuts</h3>
+            <p>Where style meets confidence. Professional hair care services for everyone.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html">Book Appointment</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <ul class="hours-list">
+                <li><span>Monday - Friday:</span> 9:00 AM - 8:00 PM</li>
+                <li><span>Saturday:</span> 9:00 AM - 6:00 PM</li>
+                <li><span>Sunday:</span> 10:00 AM - 4:00 PM</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Style Street, Beauty City, BC 12345</li>
+                <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                <li><i class="fas fa-envelope"></i> info@stylecuts.com</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 StyleCuts. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html> 
